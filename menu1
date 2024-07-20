@@ -290,14 +290,14 @@ repeat
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'priv.<font color="rgb(115, 100, 215)">9</font> - uid: <font color="rgb(115, 100, 215)">' .. uid .. '</font> / fps: <font color="rgb(115, 100, 215)">' .. fpsValue .. '</font> / ping: <font color="rgb(115, 100, 215)">' .. ping .. '</font> / time: <font color="rgb(115, 100, 215)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'priv<font color="rgb(115, 100, 215)">9</font> - uid: <font color="rgb(115, 100, 215)">' .. uid .. '</font> / fps: <font color="rgb(115, 100, 215)">' .. fpsValue .. '</font> / ping: <font color="rgb(115, 100, 215)">' .. ping .. '</font> / time: <font color="rgb(115, 100, 215)">' .. time .. '</font>'
        end
     end)
     return Watermark
  end
  
  local library = {
-    Title = 'priv.<font color="rgb(115, 100, 215)">9</font> || fallen',
+    Title = 'priv<font color="rgb(115, 100, 215)">9</font>',
     keybind = Enum.KeyCode.RightBracket,
     Watermark = createWatermark(),
        Colors = {
